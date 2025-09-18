@@ -80,10 +80,13 @@ export default function Page() {
     formData.append("format", format);
 
     setLoading(true);
-    const res = await fetch("http://localhost:5000/api/compress", {
-      method: "POST",
-      body: formData,
-    });
+    const res = await fetch(
+      "https://freaimagecompressor-backend.onrender.com/api/compress",
+      {
+        method: "POST",
+        body: formData,
+      }
+    );
 
     const data = await res.json();
     setResults(data.results);
