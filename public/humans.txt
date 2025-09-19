@@ -1,0 +1,7 @@
+/* TEAM */
+Developer: Muhammad Zain Alam
+Site: https://freaimagecompressor.vercel.app
+From: Pakistan
+
+/* TECHNOLOGY */
+Next.js, React, Tailwind, Vercel
