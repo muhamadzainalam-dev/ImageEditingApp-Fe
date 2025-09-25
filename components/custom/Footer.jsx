@@ -13,7 +13,7 @@ export default function Footer() {
   const tools = [
     {
       name: "Image Compressor",
-      path: "//frea-image-compressor",
+      path: "/frea-image-compressor",
       icon: FileImage,
     },
     {
