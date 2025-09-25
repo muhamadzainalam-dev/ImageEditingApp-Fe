@@ -377,6 +377,11 @@ export default function FreaImageCropper() {
   const containerDimensions = useMemo(() => {
     if (!imageAspectRatio) return { width: "100%", height: "400px" };
 
+    // Prevent SSR error
+    if (typeof window === "undefined") {
+      return { width: "100%", height: "400px" };
+    }
+
     const maxWidth = 600; // Max width in pixels
     const maxHeight = 500; // Max height in pixels
 
