@@ -1,0 +1,9 @@
+/* TEAM */
+Developer: Muhammad Zain Alam
+Website: https://freatoolshub.vercel.app
+
+/* SITE */
+Last update: September 2025
+Language: English
+Framework: Next.js (App Router)
+Hosting: Vercel

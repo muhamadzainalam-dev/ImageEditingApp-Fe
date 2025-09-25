@@ -54,6 +54,27 @@ export default function Tools() {
       badge: "BETA",
     },
     {
+      id: 7,
+      name: "Image Enhancer",
+      description:
+        "Enhance photo quality using AI. Improve sharpness & detail.",
+      icon: Sparkles,
+      path: "#",
+      gradient: "from-green-500 to-green-600",
+      image: "/thumbnail/7.png",
+      badge: "Coming Soon",
+    },
+    {
+      id: 11,
+      name: "Image Converter",
+      description: "Convert images between formats like JPG, PNG, WebP, GIF.",
+      icon: RefreshCcw,
+      path: "#",
+      gradient: "from-purple-500 to-purple-700",
+      image: "/thumbnail/11.png",
+      badge: "Coming Soon",
+    },
+    {
       id: 4,
       name: "YouTube Downloader",
       description: "Download YouTube videos in HD, 4K, or MP3 format.",
@@ -83,17 +104,7 @@ export default function Tools() {
       image: "/thumbnail/6.png",
       badge: "Coming Soon",
     },
-    {
-      id: 7,
-      name: "Image Enhancer",
-      description:
-        "Enhance photo quality using AI. Improve sharpness & detail.",
-      icon: Sparkles,
-      path: "#",
-      gradient: "from-green-500 to-green-600",
-      image: "/thumbnail/7.png",
-      badge: "Coming Soon",
-    },
+
     {
       id: 8,
       name: "Video Compressor",
@@ -122,16 +133,6 @@ export default function Tools() {
       path: "#",
       gradient: "from-gray-500 to-gray-700",
       image: "/thumbnail/10.png",
-      badge: "Coming Soon",
-    },
-    {
-      id: 11,
-      name: "Image Converter",
-      description: "Convert images between formats like JPG, PNG, WebP, GIF.",
-      icon: RefreshCcw,
-      path: "#",
-      gradient: "from-purple-500 to-purple-700",
-      image: "/thumbnail/11.png",
       badge: "Coming Soon",
     },
   ];

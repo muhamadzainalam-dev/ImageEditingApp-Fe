@@ -6,8 +6,7 @@
     "dev": "next dev --turbopack",
     "build": "next build --turbopack",
     "start": "next start",
-    "lint": "eslint",
-    "postbuild": "next-sitemap"
+    "lint": "eslint"
   },
   "dependencies": {
     "cheerio": "^1.1.2",
