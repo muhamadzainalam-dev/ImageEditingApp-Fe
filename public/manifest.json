@@ -1,21 +1,19 @@
 {
-  "name": "Frea Image Compressor",
-  "short_name": "Frea Compressor",
+  "name": "Frea Tools Hub",
+  "short_name": "FreaTools",
   "start_url": "/",
-  "scope": "/",
   "display": "standalone",
   "background_color": "#ffffff",
-  "theme_color": "#22c55e",
-  "orientation": "any",
-  "description": "Compress images online with Frea Image Compressor. Fast, free, and high quality.",
+  "theme_color": "#16a34a",
+  "description": "Frea Tools Hub - Free online tools like image compressor, resizer, and cropper.",
   "icons": [
     {
-      "src": "/icon-192.png",
+      "src": "/favicon-192x192.png",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "/icon-512.png",
+      "src": "/favicon-512x512.png",
       "sizes": "512x512",
       "type": "image/png"
     }

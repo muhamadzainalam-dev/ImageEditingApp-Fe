@@ -1,31 +1,27 @@
-import React from "react";
-import { motion } from "framer-motion";
-import { Upload, Sliders, Maximize, Download } from "lucide-react";
+"use client";
+import { Zap, Camera, Sparkles, Shield } from "lucide-react";
 
 const features = [
   {
-    icon: Upload,
-    title: "Easy Upload",
-    description:
-      "Upload images instantly using drag & drop or paste from clipboard. No sign-up required.",
+    icon: Zap,
+    title: "Lightning Fast",
+    description: "Process your files in seconds with our optimized algorithms",
   },
   {
-    icon: Sliders,
-    title: "Smart Compression",
-    description:
-      "Reduce image size without losing visible quality. Perfect for web and sharing.",
+    icon: Camera,
+    title: "High Quality",
+    description: "Maintain the best quality while optimizing your media files",
   },
   {
-    icon: Maximize,
-    title: "Multiple Formats",
-    description:
-      "Supports JPG, PNG, and WebP. Convert and compress your images with ease.",
+    icon: Sparkles,
+    title: "100% Free",
+    description: "All tools are completely free to use with no hidden charges",
   },
   {
-    icon: Download,
-    title: "Instant Download",
+    icon: Shield,
+    title: "Secure & Private",
     description:
-      "Download compressed images instantly, either one by one or all at once.",
+      "Your files are processed securely and never stored on our servers",
   },
 ];
 
@@ -34,12 +30,7 @@ export default function Feature() {
     <section className="py-20 bg-white" id="features">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Heading */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          className="text-center mb-16"
-        >
+        <div className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
             Your Complete Toolkit For{" "}
             <span className="text-blue-600">Growth</span>
@@ -48,33 +39,23 @@ export default function Feature() {
             Built for freelancers and teams who want to focus on their work, not
             their admin.
           </p>
-        </motion.div>
+        </div>
 
         {/* Features Grid */}
-        <motion.div
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true }}
-          transition={{ staggerChildren: 0.1 }}
-          className="grid md:grid-cols-2 lg:grid-cols-4 gap-8"
-        >
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {features.map(({ icon: Icon, title, description }) => (
-            <motion.article
+            <article
               key={title}
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              whileHover={{ scale: 1.05, y: -5 }}
-              className="bg-gradient-to-br from-white to-gray-50/50 p-8 rounded-2xl border border-blue-200 shadow-lg hover:shadow-2xl hover:border-blue-600/20 transition-all duration-500 group relative overflow-hidden"
+              className="bg-gradient-to-br from-white to-gray-50/50 p-8 rounded-2xl border border-blue-200 shadow-md hover:shadow-xl hover:border-blue-600/20 transition-all duration-300 hover:-translate-y-1"
             >
               <div className="bg-blue-600 w-16 h-16 rounded-2xl flex items-center justify-center mb-6">
                 <Icon className="w-8 h-8 text-white" />
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-3">{title}</h3>
               <p className="text-gray-700 leading-relaxed">{description}</p>
-              <div className="absolute inset-0 bg-gradient-to-br from-blue-600/5 to-blue/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
-            </motion.article>
+            </article>
           ))}
-        </motion.div>
+        </div>
       </div>
     </section>
   );

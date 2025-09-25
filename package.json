@@ -6,17 +6,21 @@
     "dev": "next dev --turbopack",
     "build": "next build --turbopack",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "postbuild": "next-sitemap"
   },
   "dependencies": {
+    "cheerio": "^1.1.2",
     "file-saver": "^2.0.5",
     "framer-motion": "^12.23.13",
     "jszip": "^3.10.1",
     "lucide-react": "^0.544.0",
-    "next": "15.5.3",
-    "react": "19.1.0",
-    "react-dom": "19.1.0",
-    "react-dropzone": "^14.3.8"
+    "next": "^15.5.3",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "react-dropzone": "^14.3.8",
+    "react-easy-crop": "^5.5.1",
+    "ytdl-core": "^4.11.5"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
