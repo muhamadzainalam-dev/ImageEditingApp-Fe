@@ -74,10 +74,13 @@ export default function FreaImageResizer() {
 
     setLoading(true);
     try {
-      const res = await fetch("http://localhost:5000/api/resize", {
-        method: "POST",
-        body: formData,
-      });
+      const res = await fetch(
+        "https://freaimagecompressor-backend.onrender.com/api/resize",
+        {
+          method: "POST",
+          body: formData,
+        }
+      );
       const data = await res.json();
       if (data.success) {
         setProcessed(data.files);
