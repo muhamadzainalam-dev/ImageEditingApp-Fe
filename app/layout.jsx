@@ -15,14 +15,18 @@ export const metadata = {
   keywords: [
     "frea tools hub",
     "free online tools",
-    "image compressor",
-    "image resizer",
-    "image cropper",
-    "compress images online",
-    "resize images online",
+    "frea image compressor",
+    "frea image resizer",
+    "frea image cropper",
+    "frea compress images online",
+    "frea resize images online",
     "crop images online",
+    "drag and drop editing website",
   ],
   metadataBase: new URL("https://freatoolshub.vercel.app"),
+  alternates: {
+    canonical: "https://freatoolshub.vercel.app",
+  },
   openGraph: {
     title: "FREA Tools Hub",
     description:
@@ -47,14 +51,33 @@ export const metadata = {
       "Free online tools including Image Compressor, Resizer, Cropper and more.",
     images: ["https://freatoolshub.vercel.app/og-home.jpg"],
   },
+  icons: {
+    icon: "/favicon-192x192.png",
+    apple: "/favicon-192x192.png",
+  },
 };
 
 export default function RootLayout({ children }) {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    name: "FREA Tools Hub",
+    url: "https://freatoolshub.vercel.app",
+    potentialAction: {
+      "@type": "SearchAction",
+      target: "https://freatoolshub.vercel.app/?q={search_term_string}",
+      "query-input": "required name=search_term_string",
+    },
+  };
+
   return (
-    <html lang="en" dir="ltr">
+    <html lang="en" dir="ltr" prefix="og: http://ogp.me/ns#">
       <body>
         <Navbar />
         <main id="main-content">
+          {/* ✅ Ensure homepage has an H1 for SEO */}
+          <h1 className="sr-only">FREA Tools Hub - Free Online Tools</h1>
+
           <div className="pt-18">{children}</div>
           <Tools />
           <Feature />
@@ -64,7 +87,13 @@ export default function RootLayout({ children }) {
         </main>
         <ProfessionalFooter />
 
-        {/* ✅ Analytics component */}
+        {/* ✅ Structured Data for SEO */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+
+        {/* ✅ Analytics */}
         <Analytics />
       </body>
     </html>

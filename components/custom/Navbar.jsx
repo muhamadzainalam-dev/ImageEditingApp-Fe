@@ -9,9 +9,19 @@ export default function Navbar() {
 
   const routeTitles = {
     "/": "Frea Tools Hub",
+    "/frea-image-compressor": "Frea Image Compressor",
     "/frea-image-cropper": "Frea Image Cropper",
     "/frea-image-resizer": "Frea Image Resizer",
-    "/frea-image-compressor": "Frea Image Compressor",
+    "/frea-image-enhancer": "Frea Image Enhancer",
+    "/frea-image-converter": "Frea Image converter",
+    // "/frea-image-compressor": "Frea Image Compressor",
+    // "/frea-image-compressor": "Frea Image Compressor",
+    // "/frea-image-compressor": "Frea Image Compressor",
+    // "/frea-image-compressor": "Frea Image Compressor",
+    // "/frea-image-compressor": "Frea Image Compressor",
+    // "/frea-image-compressor": "Frea Image Compressor",
+    "/frea-qr-generator": "Frea QR Generator",
+    "/frea-barcode-generator": "Frea Barcode Generator",
   };
 
   const pageTitle = routeTitles[pathname] || "Frea Tools";

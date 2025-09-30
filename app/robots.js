@@ -4,7 +4,7 @@ export default function robots() {
       {
         userAgent: "*",
         allow: "/",
-        disallow: ["/api/", "/private/"], // yahan jo pages crawl nahi chahte wo daal do
+        disallow: ["/api/", "/private/"],
       },
     ],
     sitemap: "https://freatoolshub.vercel.app/sitemap.xml",

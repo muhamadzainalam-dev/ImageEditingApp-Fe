@@ -52,7 +52,7 @@ export default function Hero() {
           <div className="inline-flex items-center px-4 py-2 mb-8 rounded-full border border-blue-500/20 bg-blue-500/10 backdrop-blur-sm animate-pulse">
             <Sparkles className="w-4 h-4 text-blue-400 mr-2" />
             <span className="text-blue-400 text-sm font-medium">
-              11 Powerful Tools • 100% Free
+              12 Powerful Tools • 100% Free
             </span>
           </div>
 

@@ -13,6 +13,7 @@ import {
   QrCode,
   RefreshCcw,
   Link as LinkIcon,
+  Barcode,
 } from "lucide-react";
 import Link from "next/link";
 
@@ -59,10 +60,10 @@ export default function Tools() {
       description:
         "Enhance photo quality using AI. Improve sharpness & detail.",
       icon: Sparkles,
-      path: "#",
+      path: "/frea-image-enhancer",
       gradient: "from-green-500 to-green-600",
       image: "/thumbnail/7.png",
-      badge: "Coming Soon",
+      badge: "BETA",
     },
     {
       id: 11,
@@ -72,7 +73,7 @@ export default function Tools() {
       path: "#",
       gradient: "from-purple-500 to-purple-700",
       image: "/thumbnail/11.png",
-      badge: "Coming Soon",
+      badge: "BETA",
     },
     {
       id: 4,
@@ -130,10 +131,20 @@ export default function Tools() {
       name: "QR Code Generator",
       description: "Generate QR codes for URLs, text, Wi-Fi, and more.",
       icon: QrCode,
-      path: "#",
+      path: "/frea-qr-generator",
       gradient: "from-gray-500 to-gray-700",
       image: "/thumbnail/10.png",
-      badge: "Coming Soon",
+      badge: "BETA",
+    },
+    {
+      id: 12,
+      name: "Bar Code Generator",
+      description: "Generate Bar codes for URLs, text, Wi-Fi, and more.",
+      icon: Barcode,
+      path: "/frea-barcode-generator",
+      gradient: "from-yellow-500 to-yellow-600",
+      image: "/thumbnail/12.png",
+      badge: "BETA",
     },
   ];
 

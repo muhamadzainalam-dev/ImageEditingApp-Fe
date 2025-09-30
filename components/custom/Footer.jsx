@@ -22,17 +22,18 @@ export default function Footer() {
       icon: Maximize,
     },
     { name: "Image Cropper", path: "/frea-image-cropper", icon: Crop },
+    { name: "Image Enhancer", path: "/frea-image-cropper", icon: Crop },
+    { name: "Image Converter", path: "/frea-image-cropper", icon: Crop },
     { name: "YouTube Downloader", path: "#", icon: Video },
-    { name: "Facebook Video Editor", path: "#", icon: Palette },
-    { name: "Video Compressor", path: "#", icon: Download },
   ];
 
   const moreTools = [
+    "Facebook Video Downloader",
     "Instagram Video Downloader",
-    "Image Enhancer",
+    "Video Compressor",
     "Link Shortener",
     "QR Code Generator",
-    "Image Converter",
+    "Bar Code Generator",
   ];
 
   return (
