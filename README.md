@@ -1,36 +1,62 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# ImageEditingApp – Frontend
 
-## Getting Started
+[![Next.js](https://img.shields.io/badge/Next.js-15-black?style=for-the-badge&logo=next.js)](https://nextjs.org/)
+[![React](https://img.shields.io/badge/React-19-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://react.dev/)
+[![JavaScript](https://img.shields.io/badge/JavaScript-ES6-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+[![UX](https://img.shields.io/badge/UX-Image_Tools-0EA5E9?style=for-the-badge)](#)
+[![QR](https://img.shields.io/badge/QR%2FBarcode-Generator-111827?style=for-the-badge)](#)
 
-First, run the development server:
+A web-based image editing platform with **compressor**, **resizer**, **cropper**, **enhancer**, **type converter**, plus **QR & barcode generator** — designed for speed, usability, and optimized output for web performance.
+
+> 🔗 **Backend Repo:** `muhamadzainalam-dev/ImageEditingApp-Be`  
+> `https://github.com/muhamadzainalam-dev/ImageEditingApp-Be`
+
+---
+
+## 💼 Skills & Tech Used
+
+- **Framework:** Next.js
+- **UI:** React, React DOM
+- **File Upload UX:** React Dropzone
+- **Cropping:** `react-easy-crop`
+- **QR / Barcode:** `qrcode.react`, `react-barcode`
+- **Compression/Export:** JSZip
+- **Animations:** Framer Motion
+- **Icons/UI:** Lucide React, React Icons
+- **Parsing/Scraping (client-side use):** Cheerio
+- **Utilities:** `ytdl-core`
+- **Code Quality / Tooling:** ESLint, `eslint-config-next`
+- **CSS Tooling:** Tailwind CSS (v4), `@tailwindcss/postcss`
+
+---
+
+## 🚀 Run Locally
 
 ```bash
+git clone https://github.com/muhamadzainalam-dev/ImageEditingApp-Fe.git
+cd ImageEditingApp-Fe
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open:
+```text
+http://localhost:3000
+```
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 👨‍💻 Author
 
-## Learn More
+**Muhammad Zain Alam**  
+Frontend Developer | React.js & Next.js Enthusiast
 
-To learn more about Next.js, take a look at the following resources:
+[![Email](https://img.shields.io/badge/Email-muhamadzainalam.dev%40gmail.com-red?style=for-the-badge&logo=gmail)](mailto:muhamadzainalam.dev@gmail.com)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/muhamadzain-dev/)
+[![GitHub](https://img.shields.io/badge/GitHub-Follow-black?style=for-the-badge&logo=github)](https://github.com/muhamadzainalam-dev)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+<div align="center">
+  <strong>⭐ Star this repository if you found it useful!</strong>
+</div>
